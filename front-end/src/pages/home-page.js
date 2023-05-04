@@ -7,7 +7,7 @@ import Tyrannosaurus from "../photos/Tyrannosaurus.webp";
 import Velociraptor from "../photos/Velociraptor.jpeg";
 import Search from "../photos/search (1).png";
 import Button from "@mui/material/Button";
-import { Header } from "../components/header.js"
+import { Header } from "../components/header.js";
 
 export const Homepage = () => {
   return (
@@ -107,36 +107,37 @@ export const Homepage = () => {
             гарцаагүй.
           </div>
           <div className="Imagine-text">
-            Everything we know today about dinosaurs we have learned through the
-            preserved fossils discovered all over the world. Each year
-            palaeontologists and scientists make new discoveries that can shed
-            new light on how they lived. Some recent discoveries even change the
-            way we thought the Dinosaurs looked, thanks to the discoveries of
-            more complete skeletons.
+            Өнөөдөр бид үлэг гүрвэлийн талаар мэддэг бүх зүйлийг дэлхийн өнцөг
+            булан бүрээс олдсон хадгалагдсан олдворуудаас олж мэдсэн. Жил бүр
+            палеонтологичид болон эрдэмтэд тэдний хэрхэн амьдарч байсан талаар
+            шинэ гэрэл тусгаж чадах шинэ нээлтүүдийг хийдэг. Сүүлийн үеийн зарим
+            нээлт нь илүү бүрэн гүйцэд араг яс олдсоны ачаар үлэг гүрвэлийн
+            харагдах байдлыг бидний бодож байсан хэлбэрийг өөрчилсөн.
           </div>
           <div className="Imagine-text">
-            Some questions though will remain unanswered, like were they
-            brightly coloured or camouflaged? How long did certain types of
-            species live for? Could they make any sounds, and if so, what did
-            they sound like? Palaeontologists and scientists can make good
-            hypotheses around these types of questions, and as technology
-            enhancements improve, hopefully one day we’ll know.
+            Зарим "Тэд тод өнгөтэй байсан уу?" гэх мэт асуултууд хариултгүй
+            хэвээр үлдэнэ. Зарим төрлийн зүйлүүд хэр удаан амьдарч байсан бэ?
+            Тэд ямар нэгэн дуу чимээ гаргаж чадах уу, хэрэв тийм бол тэд ямар
+            сонсогдож байсан бэ? Палеонтологичид болон эрдэмтэд эдгээр төрлийн
+            асуултуудын талаар сайн таамаглал дэвшүүлж чаддаг бөгөөд технологийн
+            дэвшил сайжрах тусам бид хэзээ нэгэн цагт үүнийг мэдэх болно гэж
+            найдаж байна.
           </div>
         </div>
         <img className="second-page-photo1" alt="photo1"></img>
         <div className="second-part">
-          <div className="Long">How long did the Dinosaurs live for?</div>
+          <div className="Long">Үлэг гүрвэлүүд хэр удаан амьдарсан бэ?</div>
           <div className="Long-text">
-            The Dinosaurs lived on the earth for about 165 million years. That
-            is an extremely long time when you realise that humans have only
-            existed for around 3 million years. Humanity still has a long way to
-            go before we are as successful in terms of inhabiting the earth as
-            the dinosaurs were.
+            Үлэг гүрвэлүүд дэлхий дээр 165 сая жил амьдарч байжээ. Хүн төрөлхтөн
+            ердөө 3 сая жилийн турш оршин тогтнож байгааг анзаарахад энэ бол маш
+            урт хугацаа юм. Бид дэлхий дээр үлэг гүрвэлүүд шиг амжилттай
+            амьдрахад хүн төрөлхтөнд маш их зам бий.
           </div>
+
           <div className="Long-text">
-            Since the earth was formed it has changed massively. The landmass,
-            the seas and even the climate has changed dramatically, this
-            includes the animals and plants.
+            Дэлхий үүссэн цагаасаа хойш асар их өөрчлөгдсөн. Хуурай газар, далай
+            тэнгис, тэр ч байтугай уур амьсгал эрс өөрчлөгдсөн, үүнд амьтан,
+            ургамал орно.
           </div>
           <div className="Long-text">
             The dinosaurs too evolved over time, adapting to changing
