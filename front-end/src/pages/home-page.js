@@ -1,15 +1,20 @@
 import "../styles/home-page.css";
-import Triceratops from "../photos/Triceratops.jpeg";
-import Spinosaurus from "../photos/spinosaurus.jpeg";
-import Stegosaurus from "../photos/stegosaurus.jpeg";
-import Tarbosaurus from "../photos/tarbosaurus.png";
-import Tyrannosaurus from "../photos/Tyrannosaurus.webp";
-import Velociraptor from "../photos/Velociraptor.jpeg";
+import Triceratops from "../photos/trice.png";
+import Spinosaurus from "../photos/spino.png";
+import Stegosaurus from "../photos/stego.png";
+import Tarbosaurus from "../photos/tarbo.png";
+import Tyrannosaurus from "../photos/tyr.png";
+import Velociraptor from "../photos/vel.png";
 import Search from "../photos/search (1).png";
 import Button from "@mui/material/Button";
 import { Header } from "../components/header.js";
+import TestPh from "../photos/test1.png"
+import TestPh2 from "../photos/test2.png"
+import { Footer } from "../components/footer";
 
 export const Homepage = () => {
+
+
   return (
     <div className="home-container">
       <Header></Header>
@@ -54,7 +59,7 @@ export const Homepage = () => {
           </div>
           <div className="example">
             <img src={Spinosaurus} alt="Spino-img" className="Spino-img"></img>
-            <div className="Spinosaurus">"Explore now"</div>
+            <div className="Spinosaurus">"Spinosaurus"</div>
             <div className="Spino-about">
               Спинозавр махчин амьтан байсан. Цэрдийн галавын үед амьдарч,
               Африкт амьдарч байжээ. Түүний олдворыг Tataouine (Tunisia), Adrar
@@ -97,67 +102,59 @@ export const Homepage = () => {
 
       <div className="page2">
         <div className="first-part">
-          <div className="Imagine">Төсөөлөөд үз...</div>
-          <div className="Imagine-text">
-            Үлэг гүрвэлийн тухай бодоход хамгийн түрүүнд юу бодогддог вэ? Энэ нь
-            урт, хурц шүдтэй том, ширүүн байж болно. Эсвэл урт хүзүү сүүлтэй,
-            бүдүүн хөлтэй, автобус шиг том биетэй ч байж магадгүй. Үлэг
-            гүрвэлийг ямар дүр төрхтэй гэж төсөөлж байгаагаас үл хамааран тэд
-            таны төсөөлж байснаас илүү том, аймшигтай, үзэсгэлэнтэй байх нь
-            гарцаагүй.
+          <div className="first-part-text">
+            <div className="Imagine">Төсөөлөөд үз ...</div>
+            <div className="Imagine-text">
+              Үлэг гүрвэлийн тухай бодоход хамгийн түрүүнд юу бодогддог вэ?
+              Урт, хурц шүдтэй том, ширүүн байж болно. Эсвэл урт хүзүү сүүлтэй,
+              бүдүүн хөлтэй, автобус шиг том биетэй ч байж магадгүй. Үлэг
+              гүрвэлийг ямар дүр төрхтэй гэж төсөөлж байгаагаас үл хамааран тэд
+              таны төсөөлж байснаас илүү том, аймшигтай, үзэсгэлэнтэй байх нь
+              гарцаагүй.
+            </div>
+            <div className="Imagine-text">
+              Өнөөдөр бид үлэг гүрвэлийн талаар мэддэг бүх зүйлийг дэлхийн өнцөг
+              булан бүрээс олдсон хадгалагдсан олдворуудаас олж мэдсэн. Жил бүр
+              палеонтологичид болон эрдэмтэд тэдний хэрхэн амьдарч байсан талаар
+              шинэ гэрэл тусгаж чадах шинэ нээлтүүдийг хийдэг. Сүүлийн үеийн зарим
+              нээлт нь илүү бүрэн гүйцэд араг яс олдсоны ачаар үлэг гүрвэлийн
+              харагдах байдлыг бидний бодож байсан хэлбэрийг өөрчилсөн.
+            </div>
+            <div className="Imagine-text">
+              Зарим "Тэд тод өнгөтэй байсан уу?" гэх мэт асуултууд хариултгүй
+              хэвээр үлдэнэ. Зарим төрлийн зүйлүүд хэр удаан амьдарч байсан бэ?
+              Тэд ямар нэгэн дуу чимээ гаргаж чадах уу, хэрэв тийм бол тэд ямар
+              сонсогдож байсан бэ? Палеонтологичид болон эрдэмтэд эдгээр төрлийн
+              асуултуудын талаар сайн таамаглал дэвшүүлж чаддаг бөгөөд технологийн
+              дэвшил сайжрах тусам бид хэзээ нэгэн цагт үүнийг мэдэх болно гэж
+              найдаж байна.
+            </div>
           </div>
-          <div className="Imagine-text">
-            Өнөөдөр бид үлэг гүрвэлийн талаар мэддэг бүх зүйлийг дэлхийн өнцөг
-            булан бүрээс олдсон хадгалагдсан олдворуудаас олж мэдсэн. Жил бүр
-            палеонтологичид болон эрдэмтэд тэдний хэрхэн амьдарч байсан талаар
-            шинэ гэрэл тусгаж чадах шинэ нээлтүүдийг хийдэг. Сүүлийн үеийн зарим
-            нээлт нь илүү бүрэн гүйцэд араг яс олдсоны ачаар үлэг гүрвэлийн
-            харагдах байдлыг бидний бодож байсан хэлбэрийг өөрчилсөн.
-          </div>
-          <div className="Imagine-text">
-            Зарим "Тэд тод өнгөтэй байсан уу?" гэх мэт асуултууд хариултгүй
-            хэвээр үлдэнэ. Зарим төрлийн зүйлүүд хэр удаан амьдарч байсан бэ?
-            Тэд ямар нэгэн дуу чимээ гаргаж чадах уу, хэрэв тийм бол тэд ямар
-            сонсогдож байсан бэ? Палеонтологичид болон эрдэмтэд эдгээр төрлийн
-            асуултуудын талаар сайн таамаглал дэвшүүлж чаддаг бөгөөд технологийн
-            дэвшил сайжрах тусам бид хэзээ нэгэн цагт үүнийг мэдэх болно гэж
-            найдаж байна.
-          </div>
+          <img src={TestPh} className="second-page-photo1" alt="photo1"></img>
         </div>
-        <img className="second-page-photo1" alt="photo1"></img>
         <div className="second-part">
-          <div className="Long">Үлэг гүрвэлүүд хэр удаан амьдарсан бэ?</div>
-          <div className="Long-text">
-            Үлэг гүрвэлүүд дэлхий дээр 165 сая жил амьдарч байжээ. Хүн төрөлхтөн
-            ердөө 3 сая жилийн турш оршин тогтнож байгааг анзаарахад энэ бол маш
-            урт хугацаа юм. Бид дэлхий дээр үлэг гүрвэлүүд шиг амжилттай
-            амьдрахад хүн төрөлхтөнд маш их зам бий.
+          <div className="second-part-text">
+            <div className="Long">Үлэг гүрвэлүүд хэр удаан амьдарсан бэ?</div>
+            <div className="Long-text">
+              Үлэг гүрвэлүүд дэлхий дээр 165 сая жил амьдарч байжээ. Хүн төрөлхтөн
+              ердөө 3 сая жилийн турш оршин тогтнож байгааг анзаарахад энэ бол маш
+              урт хугацаа юм. Бид дэлхий дээр үлэг гүрвэлүүд шиг амжилттай
+              амьдрахад хүн төрөлхтөнд маш их зам бий.
+            </div>
+            <div className="Long-text">
+              Дэлхий үүссэн цагаасаа хойш асар их өөрчлөгдсөн. Хуурай газар, далай
+              тэнгис, тэр ч байтугай уур амьсгал эрс өөрчлөгдсөн, үүнд амьтан,
+              ургамал орно.
+            </div>
+            <div className="Long-text">
+              Үлэг гүрвэлүүд дэлхий дээр удаан хугацаагаар амьдрахдаа хүрээлэн буй орчны өөрчлөлтөд дасан зохицож, цаг хугацааны явцад хувьсан өөрчлөгдөж байв. Анхны үлэг гүрвэлүүд (Юрийн галавын эхэн үе) шинж чанараараа аварга гүрвэлүүдтэй төстэй байсан тул хайрслаг арьстай, хүрээлэн буй орчиндоо ууссан байх байсан гэж олон эрдэмтэд үздэг. Түүнчлэн бүгд өнгөлөн далдлаагүй, зарим нь трицератоп шиг тод өнгөтэй толгойтой байж магадгүй гэж таамаглаж байна.
+            </div>
+            <div className="Long-text">
+              Гэсэн хэдий ч үлэг гүрвэлүүд хувьсан өөрчлөгдөж, дэлхий өөрчлөгдөхийн хэрээр үлэг гүрвэлүүд биедээ өдтэй болж хувирч, үндсэндээ аварга том шувууд болж хувирсан гэдгийг маш их хүлээн зөвшөөрдөг. Энэ онол нь ихэнх хүмүүсийн үлэг гүрвэлийн тухай төсөөллийг, ялангуяа кинонд дүрслэгдсэн байдлыг өөрчилсөн, учир нь ихэнх хүмүүсийн биеийн эргэн тойронд олон тооны өд байдаг байж магадгүй юм.
+            </div>
           </div>
-
-          <div className="Long-text">
-            Дэлхий үүссэн цагаасаа хойш асар их өөрчлөгдсөн. Хуурай газар, далай
-            тэнгис, тэр ч байтугай уур амьсгал эрс өөрчлөгдсөн, үүнд амьтан,
-            ургамал орно.
-          </div>
-          <div className="Long-text">
-            The dinosaurs too evolved over time, adapting to changing
-            environments over the long period that they lived on Earth. Many
-            scientists believe that the first Dinosaurs (Early Jurassic) may
-            have resembled giant lizards in terms of their features, so they
-            would have scaly leathery skin, and would have blended in to their
-            surroundings. It’s also hypothesized that not all were camouflaged,
-            some like the triceratops may have had brightly coloured heads.
-          </div>
-          <div className="Long-text">
-            However, as the Dinosaurs evolved and the Earth changed, it is
-            highly accepted that dinosaurs evolved to have feathers on their
-            bodies, so basically turning into gigantic birds. This theory has
-            changed the way most people think of dinosaurs particularly in the
-            way they are portrayed in films as most may have actually had an
-            array of feathers around their body.
-          </div>
+          <img src={TestPh2} className="second-page-photo2" alt="photo2"></img>
         </div>
-        <img className="second-page-photo2" alt="photo2"></img>
       </div>
 
       <div className="page3">
@@ -169,14 +166,14 @@ export const Homepage = () => {
           <div className="answers">
             <div className="answer">
               1841 онд Английн эрдэмтэн{" "}
-              <a href="https://mn.wikipedia.org/wiki/Richard_Owen">
+              <a href="https://mn.wikipedia.org/wiki/Richard_Owen" target="_blank " rel="noopener noreferrer">
                 Richard Owen
               </a>{" "}
               эдгээр амьтдыг анх удаа үлэг гүрвэл гэж тодорхойлсон байдаг.
             </div>
             <div className="answer-part2">
               Тэр үед олон том чулуужсан яс олдож байсан.{" "}
-              <a href="https://mn.wikipedia.org/wiki/Richard_Owen">
+              <a href="https://mn.wikipedia.org/wiki/Richard_Owen" target="_blank" rel="noopener noreferrer">
                 Richard Owen
               </a>{" "}
               эдгээр яснаас үүссэн амьтад нь олон хүний таамаглаж байгаа шиг
@@ -199,6 +196,9 @@ export const Homepage = () => {
           </div>
         </div>
       </div>
+
+      <Footer></Footer>
     </div>
+
   );
 };

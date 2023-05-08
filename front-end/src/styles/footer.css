@@ -1,0 +1,21 @@
+  .footer {
+    background-color: #04527f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .Text {
+    margin-bottom: 10px;
+  }
+  
+  .Text i {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
