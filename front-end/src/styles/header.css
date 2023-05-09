@@ -1,7 +1,6 @@
 .header {
   background-color: rgb(0, 255, 238);
   width: 100%;
-  position: fixed;
   top: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -41,6 +40,9 @@
   padding-left: 100px;
   padding-right: 100px;
   animation: slide-in 0.5s ease-in-out;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: large;
 }
 
 .inside-header img {
