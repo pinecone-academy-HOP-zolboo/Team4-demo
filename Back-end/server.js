@@ -1,80 +1,49 @@
-import axios from "axios";
-import cheerio from "cheerio";
-import express from "express";
-import mongoose from "mongoose";
+import express from 'express';
+import axios from 'axios';
+import cheerio from 'cheerio';
 
-const PORT = 8000;
 const app = express();
+const productURLs = new Set();
 
-mongoose.set("strictQuery", true);
-
-app.listen(PORT, () => {
-  console.log("app listening port: " + PORT);
-});
-
-export default function Main(maxPages = 50) {
+async function startCrawling() {
   const paginationURLsToVisit = ["https://dinosaurpictures.org/"];
-
   const visitedURLs = [];
 
-  const productURLs = new Set();
-
-  // iterating until the queue is empty
-  // or the iteration limit is hit
-  while (paginationURLsToVisit.length !== 0 && visitedURLs.length <= maxPages) {
-    // the current webpage to crawl
+  while (paginationURLsToVisit.length > 0) {
     const paginationURL = paginationURLsToVisit.pop();
-
-    // retrieving the HTML content from paginationURL
-    const pageHTML = axios.get(paginationURL);
-
-    // adding the current webpage to the
-    // web pages already crawled
     visitedURLs.push(paginationURL);
 
-    // initializing cheerio on the current webpage
-    const $ = cheerio.load("pageHTML.data");
+    const response = await axios.get(paginationURL);
+    const $ = cheerio.load(response.data);
 
-    // retrieving the pagination URLs
-
-    $(".view-all a").each((index, element) => {
-      const paginationURL = $(element).attr("href");
-
-      // adding the pagination URL to the queue
-      // of web pages to crawl, if it wasn't yet crawled
+    $('a.view-all span.view-all-container h3#search-box-container div.main-content').each((index, element) => {
+      const nextURL = $(element).attr('href');
       if (
-        !visitedURLs.includes(paginationURL) &&
-        !paginationURLsToVisit.includes(paginationURL)
+        nextURL &&
+        !visitedURLs.includes(nextURL) &&
+        !paginationURLsToVisit.includes(nextURL)
       ) {
-        paginationURLsToVisit.push(paginationURL);
+        paginationURLsToVisit.push(nextURL);
       }
     });
 
-    // retrieving the product URLs
-    $("body div.container div.dino-list ul.inline-list a").each(
+    $('body div.container div.dino-list ul.inline-list a').each(
       (index, element) => {
-        const productURL = $(element).attr("href");
+        const productURL = $(element).attr('href');
         productURLs.add(productURL);
       }
     );
   }
 
-  // logging the crawling results
-  console.log([...productURLs]);
-
-  // use productURLs for scraping purposes...
+  console.log('Crawling completed.');
 }
 
-// running the main() function
-Main()
-  .then(() => {
-    // successful ending
-    process.exit(0);
-  })
-  .catch((e) => {
-    // logging the error message
-    console.error(e);
-
-    // unsuccessful ending
-    process.exit(1);
+startCrawling().then(() => {
+  app.get('/api/crawled-data', (req, res) => {
+    res.json([...productURLs]);
   });
+
+  app.listen(5000, () => {
+    console.log('Server is running on port 5000');
+  });
+});
