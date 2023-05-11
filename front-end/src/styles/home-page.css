@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: column;
   background-color: #0693e3;
+  background-image: url(../photos/licensed-image.png);
+  background-size: 61%;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 8%;
   padding-bottom: 10%;
   justify-content: center;
@@ -18,14 +22,14 @@
   display: flex;
   justify-content: center;
   font-size: 50px;
-  color: white;
+  color: black;
 }
 
 .Welcome-text {
   display: flex;
   justify-content: center;
   font-size: large;
-  color: white;
+  color: black;
   padding-top: 2%;
 }
 
@@ -33,7 +37,7 @@
   display: flex;
   justify-content: center;
   font-size: large;
-  color: white;
+  color: black;
 }
 
 .search-input {
@@ -111,7 +115,7 @@
   flex-direction: column;
   gap: 30px;
   margin-top: 100px;
-  background-color: #0693e3;
+  background-image: linear-gradient(135deg, green, brown, blue);
   color: white;
   padding-bottom: 100px;
 }
