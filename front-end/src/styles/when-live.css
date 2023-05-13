@@ -97,7 +97,7 @@
     box-shadow: black;
   }
   
-  .search-button {
+  /* .search-button {
     width: 43px;
     height: 43px;
     background-color: rgb(120, 255, 120);
@@ -110,7 +110,7 @@
   .search-button:hover {
     background-color: rgb(87, 179, 87);
     transition: 0.5s;
-  }
+  } */
   .bottom{
     width: 100%;
     background-color:#0693e3;

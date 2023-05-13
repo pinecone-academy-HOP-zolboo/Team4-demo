@@ -1,49 +1,41 @@
 import Logo from "../photos/dinosaur-logo.png";
 import "../styles/header.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
-// import { useState, useEffect } from 'react';
 export const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const dinoJump = async (event) => {
+  const dinoJump = (event) => {
     event.preventDefault();
     navigate("/Dinosaurs");
   };
-  const homeJump = async (event) => {
+  const homeJump = (event) => {
     event.preventDefault();
     navigate("/");
     window.location.reload();
   };
-  const dieJump = async (event) => {
+  const dieJump = (event) => {
     event.preventDefault();
     navigate("/die");
   };
-  const liveJump = async (event) => {
+  const liveJump = (event) => {
     event.preventDefault();
     navigate("/live");
   };
 
-  // const [shrink, setShrink] = useState(false);
-
-  // useEffect(() => {
-  //   function handleScroll() {
-  //     if (window.scrollY > 0) {
-  //       setShrink(true);
-  //     } else {
-  //       setShrink(false);
-  //     }
-  //   }
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
-
-  // const handleClick = () => {
-  //   window.location.reload();
-  // };
-
   return (
-    <div className="header">
+    <div
+      className={`header ${
+        location.pathname === "/die"
+          ? "die-page"
+          : location.pathname === "/live"
+          ? "live-page"
+          : location.pathname === "/Dinosaurs"
+          ? "dino-page"
+          : ""
+      }`}
+    >
       <div className="inside-header">
         <img alt="logo" src={Logo} className="piece" onClick={homeJump}></img>
         <div onClick={dinoJump} className="piece">
@@ -59,3 +51,21 @@ export const Header = () => {
     </div>
   );
 };
+
+// const [shrink, setShrink] = useState(false);
+
+// useEffect(() => {
+//   function handleScroll() {
+//     if (window.scrollY > 0) {
+//       setShrink(true);
+//     } else {
+//       setShrink(false);
+//     }
+//   }
+//   window.addEventListener('scroll', handleScroll);
+//   return () => window.removeEventListener('scroll', handleScroll);
+// }, []);
+
+// const handleClick = () => {
+//   window.location.reload();
+// };

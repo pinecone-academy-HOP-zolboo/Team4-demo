@@ -3,6 +3,7 @@ import "../styles/when-live.css";
 import Jurassic from "../photos/Jurassic.png";
 import Triassic from "../photos/triassic.png";
 import Cretaceous from "../photos/cretaceous.png";
+import Search from "../photos/search (1).png";
 
 export const Live = () => {
   return (
@@ -16,6 +17,14 @@ export const Live = () => {
         <div className="Welcome-text1">
           {" "}
           incredible animals to ever walk the Earth, the Dinosaurs.
+        </div>
+        <div className="search-input">
+          <div className="search-bar">
+            <input placeholder="Search dinosaurs"></input>
+            <div className="search-button">
+              <img alt="search" src={Search} className="search-img"></img>
+            </div>
+          </div>
         </div>
       </div>
       <div className="bottom">

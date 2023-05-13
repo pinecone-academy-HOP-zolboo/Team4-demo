@@ -5,8 +5,16 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
 }
-
-
+.die-page {
+  background-image: linear-gradient(to bottom, black, black);
+  color: white;
+}
+.die-page .piece {
+  color: white;
+}
+.live-page {
+  background-image: linear-gradient(to bottom, #0693e3 , #00ffee);
+}
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -22,7 +30,7 @@
 @keyframes fade-in {
   from {
     opacity: 0;
-  }
+  }  
 
   to {
     opacity: 1;

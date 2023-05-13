@@ -6,6 +6,7 @@ import Triceratops2 from "../photos/Triceraptors2.jpeg";
 import spinosaurus2 from "../photos/spinosaurus2.jpeg";
 import apatosaurus2 from "../photos/apatosaurus2.jpeg";
 import velociraptor2 from "../photos/velociraptor2.png";
+import Search from "../photos/search (1).png";
 
 export const Die = () => {
   return (
@@ -21,8 +22,12 @@ export const Die = () => {
           incredible animals to ever walk the Earth, the Dinosaurs.
         </div>
         <div className="search-input">
-          <input placeholder="Search dinosaurs" className="inputdie"></input>
-          <button className="search-button">Click</button>
+          <div className="search-bar">
+            <input placeholder="Search dinosaurs"></input>
+            <div className="search-button">
+              <img alt="search" src={Search} className="search-img"></img>
+            </div>
+          </div>
         </div>
       </div>
       <div className="Titledie">
@@ -46,10 +51,10 @@ export const Die = () => {
           </div>
         </div>
       </div>
-      <div className="bottomdie">
+      <div className="inside-pagedie">
         <div className="trexdie">
-          <div className="column">
-            Tyrannosaurus Rex
+          <div className="exampledie">
+            <div className="dietitletext">Tyrannosaurus Rex</div>
             <img src={Trex2} alt="trex" className="trex2-img"></img>
           </div>
           <div className="describtion1">
@@ -66,8 +71,8 @@ export const Die = () => {
           </div>
         </div>
         <div className="apatodie">
-          <div className="column2">
-            apatosaurus
+          <div className="exampledie2">
+            <div className="dietitletext">Apatosaurus</div>
             <img src={apatosaurus2} alt="apato" className="apato2-img"></img>
           </div>
           <div className="describtion2">
@@ -84,8 +89,8 @@ export const Die = () => {
           </div>
         </div>
         <div className="spinodie">
-          <div className="column3">
-            Spinosaurus
+          <div className="exampledie3">
+            <div className="dietitletext">Spinosaurus</div>
             <img src={spinosaurus2} alt="spino2" className="spino2-img"></img>
           </div>
           <div className="describtion3">
@@ -101,8 +106,8 @@ export const Die = () => {
           </div>
         </div>
         <div className="tricedie">
-          <div className="column4">
-            Triceratops
+          <div className="exampledie4">
+            <div className="dietitletext">Triceraptors2</div>
             <img
               src={Triceratops2}
               alt="triceratops2"
@@ -123,8 +128,8 @@ export const Die = () => {
           </div>
         </div>
         <div className="velodie">
-          <div className="column5">
-            Velociraptors
+          <div className="exampledie5">
+            <div className="dietitletext">Velociraptor</div>
             <img src={velociraptor2} alt="velo2" className="velo2-img"></img>
           </div>
           <div className="describtion5">
@@ -143,8 +148,8 @@ export const Die = () => {
           </div>
         </div>
         <div className="stegodie">
-          <div className="column6">
-            Stegosaurus
+          <div className="exampledie6">
+            <div className="dietitletext">Stegosaurus</div>
             <img src={Stegosaurus2} alt="stego" className="Stego2-img"></img>
           </div>
           <div className="describtion6">
