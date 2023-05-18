@@ -130,23 +130,25 @@
   margin-top: 10px;
 }
   .describtion1 {
+    margin-top: 10px;
     text-align: center;
     position: relative;
     width: 95%;
-    height: 43%;
+    height: 40%;
     background-color: black;
     color: rgb(255, 255, 255);
     padding: 10px;
     border-radius: 30px;
-    opacity: 0;
+    opacity: 0;;
     font-size: 20px;
     font-family: 'Karla', sans-serif;
     font-family: 'PT Sans', sans-serif;
   }
   .describtion2 {
+    margin-top: 10px;
     text-align: center;
     width: 95%;
-    height: 46%;
+    height: 38%;
     background-color: black;
     color: rgb(255, 255, 255);
     padding: 10px;
@@ -157,9 +159,10 @@
     font-family: 'PT Sans', sans-serif;
   }
   .describtion3 {
+    margin-top: 10px;
     text-align: center;
     width: 95%;
-    height: 35%;
+    height: 30%;
     background-color: black;
     color: rgb(255, 255, 255);
     padding: 10px;
@@ -170,9 +173,10 @@
     font-family: 'PT Sans', sans-serif;
   }
   .describtion4 {
+    margin-top: 10px;
     text-align: center;
     width: 95%;
-    height: 31%;
+    height: 33%;
     background-color: black;
     color: rgb(255, 255, 255);
     padding: 10px;
@@ -183,9 +187,10 @@
     font-family: 'PT Sans', sans-serif;
   }
   .describtion5 {
+    margin-top: 10px;
     text-align: center;
     width: 95%;
-    height: 37%;
+    height: 33%;
     background-color: black;
     color: white;
     padding: 10px;
@@ -196,9 +201,10 @@
     font-family: 'PT Sans', sans-serif;
   }
   .describtion6 {
+    margin-top: 10px;
     text-align: center;
     width: 95%;
-    height: 35%;
+    height: 32%;
     background-color: black;
     color: rgb(255, 255, 255);
     padding: 10px;

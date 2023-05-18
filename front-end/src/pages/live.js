@@ -30,29 +30,27 @@ export const Live = () => {
       <div className="bottom">
         <div className="titlelive">
           <div className="titletext1">
-            Dinosaurs lived during a period of time called the Mesozoic Era,
-            which began about 252 million years ago and ended around 66 million
-            years ago.
+            Үлэг гүрвэлүүд нь Мэзозойк эрин үед амьдарч байсан ба энэ эрин үе нь
+            252 сая жилийн өмнөөс 66 сая жилийн өмнөх хүртэл үргэлжилсэн
           </div>
         </div>
         <div className="titlelive">
           <div className="titletext2">
-            The Mesozoic Era is divided into three time periods: the Triassic,
-            the Jurassic, and the Cretaceous. During this time, the Earth's
-            continents were arranged differently than they are today, and the
-            climate and environment were very different as well. Dinosaurs
-            roamed the Earth for about 165 million years before becoming extinct
+            Мэзозойк эрин үе нь дотроо 3 эрин үед хуваагддаг ба үүнийг Триассик,
+            Журрасик, Кретасеоус гэж 3 ангилдаг. Энэ үед дэлхийн тивүүд
+            одоогийхоос өөр бүтэцтэй байсан ба цаг агаар ба орчин нь бас маш
+            ялгаатай байсан. Үлэг гүрвэлүүд дэлхийд 165 жилийн турш устах
+            хүртлээ амьдарч байсан.
           </div>
         </div>
         <div className="infotime">
           <div className="timeperiod1">
-            The Triassic Period (252-201 million years ago): This was the first
-            period of the Mesozoic Era, and it was characterized by the breakup
-            of the supercontinent Pangaea and the emergence of new landmasses.
-            The climate during the Triassic was generally hot and dry, and many
-            of the early dinosaur species evolved during this time. Other
-            notable creatures from the Triassic include crocodiles, turtles, and
-            early mammals.
+            Триассик эрин үе (252-201 сая жилийн өмнө): Энэ нь Мэзозойк үеийн
+            хамгийн эхний эрин үе байсан ба энэ нь том тивүүдийн салалт , шинэ
+            газар нутгуудын үүслээр их байсан. Триассик эрин үеийн цаг агаар нь
+            халуун, хуурай байсан, бас маш олон үлэг гүрвэлүүд энэ үед хувьссан
+            байна. Триассик эрин үед үлэг гүрвэл ээс бусад амьдарч байсан амьтад
+            бол матар, яст мэлхий, эхэн үеийн хөхтөн амьтад байсан юм.~
           </div>
           <img
             src={Triassic}
@@ -60,12 +58,12 @@ export const Live = () => {
             className="timeperiod1img"
           ></img>
           <div className="timeperiod2">
-            The Jurassic Period (201-145 million years ago): This period is
-            perhaps best known for its giant herbivorous dinosaurs such as the
-            long-necked sauropods like Brachiosaurus and Diplodocus, as well as
-            predators like Allosaurus and Stegosaurus. The Jurassic was a time
-            of relatively stable climate and sea levels, and the oceans were
-            home to diverse marine life such as ichthyosaurs and plesiosaurs.
+            Журрасик эрин үе (201-145 сая жилийн өмнө): Энэ үрэн үе нь урт
+            хүзүүт сауроподууд буюу Бракиозаурус ба Диплодокус, ганц урт
+            хүзүүтээс зогсохгүй Аллозаурус, Стэгозаурус шиг махчин амьтад нь
+            энэхүү эрин үеийн онцлог байсан юм. Журрасик эрин үеийн цаг уур
+            далайн төвшин нь харьцангүй тогтвортой байсан ба далай нь олон янзын
+            усны амьтадын гэр байсан юм.
           </div>
           <img
             src={Jurassic}
@@ -73,14 +71,13 @@ export const Live = () => {
             className="timeperiod2img"
           ></img>
           <div className="timeperiod3">
-            The Cretaceous Period (145-66 million years ago): This was the final
-            period of the Mesozoic Era, and it is best known for the last and
-            most diverse group of dinosaurs, including the iconic Tyrannosaurus
-            rex and Triceratops. The climate during the Cretaceous was generally
-            warm and humid, and flowering plants began to diversify and dominate
-            the landscape. The end of the Cretaceous is marked by a mass
-            extinction event, which wiped out the non-avian dinosaurs and many
-            other species.
+            Кретасеоус эрин үе (145-66 сая жилийн өмнө): Энэ эрин үе нь Мэзозойк
+            эриний сүүлийн эрин байсан ба хамгийн олон төрлийн үлэг гүрвэл
+            байснаараа алдартай жишээ нь Т-Рекс , Трисратопс. Кретасеоус ийн цаг
+            агаар нь ерөнхийдөө дулаан чийглэг байсан ба үүнтэй холбогдуулна
+            цэцэгс хуурай газрыг бүрхэж эхэлсэн. Кретасеоус үеийн төгсгөл нь хүн
+            бүхний мэдэх устал ба энэ усталаар нисдэггүй үлэг гүрвэл ба өшөө
+            олон төрлийн амьтад газар , ус хамаарахгүй устаж үгүй болсон.
           </div>
           <img
             src={Cretaceous}

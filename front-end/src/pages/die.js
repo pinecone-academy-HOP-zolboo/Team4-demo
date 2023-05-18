@@ -32,41 +32,41 @@ export const Die = () => {
       </div>
       <div className="Titledie">
         <div className="titletextdie">
-          There were many different kinds of dinosaurs that lived during the
-          Mesozoic Era, which lasted from about 252 million years ago to 66
-          million years ago. It's estimated that there were over 1,000 different
-          species of dinosaurs, but not all of them lived at the same time.
+          Ойролцоогоор 252 сая жилийн өмнөөс 62 сая жилийн өмнөх хүртэл мэзозойк
+          эрин үед маш олон төрлийн үлэг гүрвэлүүд амьдарж байжээ. Энэ эрин үед
+          1000 орчим төрлийн үлэг гүрвэлүүд байсан ч бүгд нэгэн цаг хугацаанд
+          оршиж байгаагүй юм.
         </div>
         <div className="titletextdie">
-          Dinosaurs can be divided into two main groups: Saurischians and
-          Ornithischians.
+          Үлэг гүрвэлүүд нь 2 том бүлэгт хуваагддаг : Саурискианс ба
+          Орнитискичид
           <div>
-            Saurischians are meat-eating dinosaur's like Trex, Veliciraptor as
-            well as long necked dinosaurs like Apatosaurus and Brachiosaurus.
+            Саурискианс бол махан тэжээлтэн үлэг гүрвэлүүд жишээ нь Т Рекс ,
+            Вэлисирапторс ба урт хүзүүт үлэг гүрвэлүүд Апатозаурус ба
+            Бракиозаурус гэх мэт.
           </div>
           <div>
-            Ornithischian dinosaurs include the horned and frilled dinosaurs
-            like Triceratops and the armored dinosaurs like Stegosaurus and
-            Ankylosaurus.
+            Орнитискичид нь эвэртэй ба далбаатай үлэг гүрвэлүүд юм жишээ нь
+            Трисратоп ба хуягласан үлэн гүрвэлүүд Стэгозаурус , Анкилозаурус
           </div>
         </div>
       </div>
       <div className="inside-pagedie">
         <div className="trexdie">
           <div className="exampledie">
-            <div className="dietitletext">Tyrannosaurus Rex</div>
+            <div className="dietitletext">Тринозаурус</div>
             <img src={Trex2} alt="trex" className="trex2-img"></img>
           </div>
           <div className="describtion1">
-            <div>SIZE: LENGTH 13.5M HEIGHT 5.5M</div>
-            <div>WEIGHT: 3175KG TO 6350KG</div>
-            <div>DIET: CARNIVORE, LARGE ANIMALS, INCLUDING HUMANS</div>
+            <div>Хэмжээ: Урт 13.5M Өндөр 5.5M</div>
+            <div>Жин: 3175кг аас 6350кг</div>
+            <div>Идэш: Махчин амьтад, Том амьтад (хүмүүсийг оруулаад)</div>
             <div>
-              The ferocious Tyrannosaurus rex... Article Mass Extinction Around
-              65 million years ago, something unusual happened on our planet –
-              and we can see it in the fossil record. Article Missing Marine
-              Life Large dinosaurs like T. Rex are the most famous creatures
-              that went extinct some 65 million years ago.
+              Хэрцгий Тринозаурус баатар... 65 сая жилийн өмнө манай дэлхийд ер
+              бусын зүйл тохиолдсоныг бид чулуун олдворуудаас харж болно.
+              Нийтээрэй олноор устах газар ус хамаарахгүй , Том , жижиг
+              хамаарахгүй тохиолдсон энэ явдалд Т-Рекс нь тэр үед устаж үгүй
+              болсон алдартай үлэг гүрвэлүүдийн нэг.
             </div>
           </div>
         </div>
@@ -76,38 +76,38 @@ export const Die = () => {
             <img src={apatosaurus2} alt="apato" className="apato2-img"></img>
           </div>
           <div className="describtion2">
-            <div>SIZE: LENGTH 27M HEIGHT 6M</div>
-            <div>WEIGHT: 9071KG TO 19958 KG</div>
-            <div>DIET: HERBIVORE; FERNS, CYCADS, AND CONIFERS</div>
+            <div>Хэмжээ: Урт 27M Өндөр 6M</div>
+            <div>Жин: 9071кг аас 19958 кг</div>
+            <div>Идэш: Өвсөн тэжээлтэн, Өндөр модны навчис</div>
             <div>
-              Apatosaurus lived during the late Jurassic Period, about 157-146
-              million years ago. There was a minor mass extinction toward the
-              end of the Jurassic period. During this extinction, most of the
-              stegosaurid and enormous sauropod dinosaurs died out, as did many
-              genera of ammonoids, marine reptiles, and bivalves.
+              Апатозаурус нь Журрасик эрин үеийн сүүлд амьдарч байсан
+              ойролцоогоор 157 оос 146 жилийн өмнө. Журрасик эрин үеийн сүүлд
+              үлэг гүрвэлүүд устаж үгүй болж эхэлсэн ба үүнд Стэгозаурус ба асар
+              том сауропод үлэг гүрвэлүүд устсан. Үүгээрч дуусахгүй Аммоноид,
+              далайн хэвлээр явагчид, хос хавхлагт амьтдын олон төрөл зүйл мөн
+              адил.
             </div>
           </div>
         </div>
         <div className="spinodie">
           <div className="exampledie3">
-            <div className="dietitletext">Spinosaurus</div>
+            <div className="dietitletext">Спиносаурус</div>
             <img src={spinosaurus2} alt="spino2" className="spino2-img"></img>
           </div>
           <div className="describtion3">
-            <div>SIZE: LENGTH 14M-18M HEIGHT 5.4M</div>
-            <div>WEIGHT: 12000KG TO 20000KG</div>
-            <div>DIET: CARNIVORE, LARGE ANIMALS, INCLUDING HUMANS</div>
+            <div>Хэмжээ: Урт 14M-18M Өндөр 5.4M</div>
+            <div>Жин: 12000кг аас 20000кг</div>
+            <div>Идэш: Махан тэжээлтэн, том амьтад (хүмүүс орно)</div>
             <div>
-              This very large dinosaur roamed North Africa, particularly the
-              swamps where modern day Egypt and Morocco are. Time Period:
-              Spinosaurus lived during the Cretaceous period which was 112- 97
-              million years ago.
+              Энэ үлэмж үлэг гүрвэлүүд нь хойд Африкад ялан гуяа одоогийн Эгипет
+              , Мороко улсын газруудад. Спиносаурус ууд нь Кретасеоус эрин үед
+              112 оос - 97 сая жилийн өмнө амьдарч байсан.
             </div>
           </div>
         </div>
         <div className="tricedie">
           <div className="exampledie4">
-            <div className="dietitletext">Triceraptors2</div>
+            <div className="dietitletext">Трисратопс</div>
             <img
               src={Triceratops2}
               alt="triceratops2"
@@ -115,53 +115,49 @@ export const Die = () => {
             ></img>
           </div>
           <div className="describtion4">
-            <div>SIZE: LENGTH 8.9M HEIGHT 3.6M</div>
-            <div>WEIGHT: 5443KG, TO 9979KG</div>
+            <div>Хэмжээ: Урт 8.9M Өндөр 3.6M</div>
+            <div>Жин: 5443кг аас 9979кг</div>
+            <div>Идэш: Өвсөн тэжээлтэн, Модны навч, бусад хатуу ургамалууд</div>
             <div>
-              DIET: HERBIVORE, FEEDING ON CYCADS, PALMS, AND OTHER TOUGH PLANTS
-            </div>
-            <div>
-              66 million years ago It is one of the last-known non-avian
-              dinosaur genera, and became extinct in the Cretaceous–Paleogene
-              extinction event 66 million years ago.
+              66 сая жилийн өмнө энэ үлэг гүрвэл нь хамгийн сүүлд мэдэгдэж
+              байгаа нисдэггүй үлэг гүрвэлийн төрөл байсан ба
+              Кретасеоус-Палеогене үсталтын үед 66 сая жилийн өмнө устсан.
             </div>
           </div>
         </div>
         <div className="velodie">
           <div className="exampledie5">
-            <div className="dietitletext">Velociraptor</div>
+            <div className="dietitletext">Вэлисирапторс</div>
             <img src={velociraptor2} alt="velo2" className="velo2-img"></img>
           </div>
           <div className="describtion5">
-            <div>SIZE: LENGTH 3.9M HEIGHT 1.7M</div>
-            <div>WEIGHT: 226KG</div>
+            <div>Хэмжээ: Урт 3.9M Өндөр 1.7M</div>
+            <div>Жин: 226кг</div>
             <div>
-              DIET: CARNIVORE, SMALL MAMMALS AND DINOSAURS ALONE. LARGER
-              DINOSAURS IN PACKS.
+              Идэш: Махан тэжээлтэн, Жижиг хөхтөн амьтад, Ганцаараа явж буй үлэг
+              гүрвэл. Том үлэг гүрвэл бол сүргээрээ
             </div>
             <div>
-              around 66 million years ago Velociraptor lived during at the end
-              of the Cretaceous Period, between 85.8 to 70.6 million years ago.
-              Scientists believe that it went extinct around 66 million years
-              ago as part of a specific extinction event.
+              Вэлисирапторс нь Кретасеоус эрин үеийн сүүл үед амьдарч байсан
+              буюу 85.8 аас 70.6 сая жилийн өмнө. Эрдэмтэд энэ үлэг гүрвэлийг 66
+              сая жилийн өмнө бусад үлэг гүрвэлүүдтэй зэрэг устаж үгүй болсон
+              гэж итгэдэг.
             </div>
           </div>
         </div>
         <div className="stegodie">
           <div className="exampledie6">
-            <div className="dietitletext">Stegosaurus</div>
+            <div className="dietitletext">Стэгозаурус</div>
             <img src={Stegosaurus2} alt="stego" className="Stego2-img"></img>
           </div>
           <div className="describtion6">
-            <div>SIZE: LENGTH 10.1M HEIGHT 5M</div>
-            <div>WEIGHT: 1587KG TO 3492KG</div>
-            <div>DIET: HERBIVORE; LOW-LYING FERNS AND CYCADS</div>
+            <div>Хэмжээ: Урт 10.1M Өндөр 5M</div>
+            <div>Жин: 1587кг аас 3492кг</div>
+            <div>Идэш: Өвсөн тэжээлтэн, Нам доор байх мод, бутны навчис</div>
             <div>
-              Stegosaurus, for example, lived during the Late Jurassic Period,
-              about 150 million years ago. Tyrannosaurus rex lived during the
-              Late Cretaceous Period, about 72 million years ago. Stegosaurus
-              was extinct for 66 million years before Tyrannosaurus walked on
-              Earth.
+              Стэгозаурус, Журрасик эрин үеийн сүүл үед буюу 150 сая жилийн өмнө
+              амьдарч байсан . Стэгозаурус нь Т-Рекс дэлхийд үүсэхээс 66 сая
+              жилийн өмнө устсан
             </div>
           </div>
         </div>
