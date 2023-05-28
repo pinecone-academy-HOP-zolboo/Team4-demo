@@ -5,7 +5,6 @@ import Stegosaurus from "../photos/stego.png";
 import Tarbosaurus from "../photos/tarbo.png";
 import Tyrannosaurus from "../photos/tyr.png";
 import Velociraptor from "../photos/vel.png";
-import Search from "../photos/search (1).png";
 import Button from "@mui/material/Button";
 import { Header } from "../components/header.js";
 import TestPh from "../photos/test1.png";
@@ -27,14 +26,7 @@ export const Homepage = () => {
           <div className="Welcome-text1">
             incredible animals to ever walk the Earth, the Dinosaurs.
           </div>
-          <div className="search-input">
-            <div className="search-bar">
-              <input placeholder="Search dinosaurs"></input>
-              <div className="search-button">
-                <img alt="search" src={Search} className="search-img"></img>
-              </div>
-            </div>
-          </div>
+
         </div>
 
         <div className="inside-page-intro">START EXPLORING THE DINOSAURS</div>

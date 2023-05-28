@@ -1,0 +1,222 @@
+.con {
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=PT+Sans:wght@700&display=swap')
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.home-container {
+    width: 100%;
+    height: fit-content;
+  }
+  .header {
+    background-color: black;
+    color: white;
+    /* background-image: linear-gradient(to bottom, rgb(0,255,238), rgb(0,255,238), rgb(0,255,238), rgb(0,255,238) , rgb(0,204,191) , rgb(0,51,47), black); */
+  }
+  .inside-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    height: 70px;
+    z-index: 10;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .inside-header img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .piece {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    justify-content: center;
+    background-image: linear-gradient(to top , grey, black);
+  }
+.Welcome-die{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+}
+  .Welcome {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+  }
+
+  .Welcome-text {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    color: white;
+    padding-top: 2%;
+  }
+  .Welcome-text1 {
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    color: white;
+  }
+
+  .search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+  }
+
+  .input {
+    width: 25%;
+    height: 40px;
+    border: 1px solid black;
+    box-shadow: black;
+    font-size: 20px;
+    border-right: 0px;
+    border-radius: 50px 0px 0px 50px;
+  }
+
+  .piece:hover {
+    font-weight: bold;
+    animation: bold 0.3s;
+  }
+  @keyframes bold {
+    0% {
+      font-weight: 100;
+    }
+    25% {
+      font-weight: 300;
+    }
+    50% {
+      font-weight: 500;
+    }
+    75% {
+      font-weight: 700;
+    }
+    100% {
+      font-weight: bold;
+    }
+  }
+  .search-button {
+    position: relative;
+    right: 50px;
+    width: 103px;
+    height: 44px;
+    background-image: linear-gradient(to left, rgb(87, 179, 87) , white);
+    border-radius: 0px 50px 50px 0px;
+    border: 1px solid black;
+    border-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+.search-button:hover {
+    animation: searchbutton 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes searchbutton {
+  0% {
+    background-image: linear-gradient(to left, rgb(87, 179, 87) , white);
+  }
+  25% {
+    background-image: linear-gradient(to left, rgb(65, 122, 65), white);
+  }
+  50% {
+    background-image: linear-gradient(to left, rgb(53, 75, 53), white);
+  }
+  75% {
+    background-image: linear-gradient(to left, rgb(31, 38, 31), white);
+  }
+  100% {
+    background-image: linear-gradient(to left, rgb(0, 0, 0), white);
+  }
+}
+.Types {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.column {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dino {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 600px;
+  margin: 20px;
+  /* background-color: black; */
+}
+.insidecolumns {
+  height: 98%;
+  margin: 4px;
+  background-color: white;
+}
+.w-25 {
+  width: 30%;
+}
+.w-75 {
+  width: 70%;
+}
+.h-25 {
+  height: 25%;
+}
+.Image {
+  margin-bottom: 1%;
+}
+.h-50 {
+  height: 50%;
+}
+.Location  {
+  border: 2px solid black;
+  border-color: black;
+  border-top: 5px;
+  border-right: 5px;
+  border-left: 5px;
+}
+.DinoImages {
+  width: 100%;
+  height: 100%;
+}
+.Description {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.Country {
+  color: rgb(22, 54, 231) ;
+  font-weight: 500;
+}
+li {
+  margin: 10px;
+}
+.Namenothers {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}

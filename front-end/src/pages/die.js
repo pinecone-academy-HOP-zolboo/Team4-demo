@@ -6,7 +6,7 @@ import Triceratops2 from "../photos/Triceraptors2.jpeg";
 import spinosaurus2 from "../photos/spinosaurus2.jpeg";
 import apatosaurus2 from "../photos/apatosaurus2.jpeg";
 import velociraptor2 from "../photos/velociraptor2.png";
-import Search from "../photos/search (1).png";
+import { Footer } from "../components/footer";
 
 export const Die = () => {
   return (
@@ -21,14 +21,7 @@ export const Die = () => {
           {" "}
           incredible animals to ever walk the Earth, the Dinosaurs.
         </div>
-        <div className="search-input">
-          <div className="search-bar">
-            <input placeholder="Search dinosaurs"></input>
-            <div className="search-button">
-              <img alt="search" src={Search} className="search-img"></img>
-            </div>
-          </div>
-        </div>
+
       </div>
       <div className="Titledie">
         <div className="titletextdie">
@@ -162,6 +155,7 @@ export const Die = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

@@ -17,7 +17,7 @@ async function startCrawling() {
     const $ = cheerio.load(response.data);
 
     $('a.view-all span.view-all-container h3#search-box-container div.main-content').each((index, element) => {
-      const nextURL = $(element).attr('href');
+      const nextURL = $(element).attr("href");
       if (
         nextURL &&
         !visitedURLs.includes(nextURL) &&
@@ -29,12 +29,12 @@ async function startCrawling() {
 
     $('body div.container div.dino-list ul.inline-list a').each(
       (index, element) => {
-        const productURL = $(element).attr('href');
+        const productURL = $(element).attr("href");
         productURLs.add(productURL);
       }
     );
   }
-
+  console.log(productURLs)
   console.log('Crawling completed.');
 }
 
